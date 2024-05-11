@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
 :root{
-	---green:#2874A6;
-	--aqua:#AED6F1;
-	---dark-gray:#97A3A1;
-	---gray:#DAE0DF;
+	---green:#219b9e;
+	---middle-gray:#adadad;
+	---dark-gray:#5e5e5e;
+	---gray:#eae8e8;
 	---white:#fff;
 	---black:#000;
 }
@@ -26,19 +26,20 @@ body {
 	grid-template-rows: min-content 1fr min-content;
 	margin-bottom: 8rem;
 }
+
 /*               TOPBAR               */
 .topbar {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem 2rem;
-	background-color:var(---gray);
-
+	background-image:linear-gradient(90deg,#219b9e, rgb(250, 216, 136));
 	position: fixed;
 	z-index: 30;
 	top: 0;
 	right: 0;
 	width: calc(100% - 30rem);
+	box-shadow: 0 0 2rem var(---middle-gray);
 }
 
 .container-arrows {
@@ -48,7 +49,7 @@ body {
 
 .container-arrow-left,
 .container-arrow-right {
-	background-color:var(---gray);
+	background-color:var(---white);
 	width: 3rem;
 	height: 3rem;
 	border-radius: 50%;
@@ -59,13 +60,18 @@ body {
 
 .container-arrow-left i,
 .container-arrow-right i {
-	color:var(---white);
+	color:var(---green);
 	font-size: 1.4rem;
 }
-.topbar h2{
+
+h2{
+	font-size: 2.2rem;
+	font-weight:bold;
+	line-height: 25px;
 	color: var(---white);
-	font-size: 20px;
+	padding-left: 5px;
 }
+
 .buttons-user {
 	display: flex;
 	align-items: center;
@@ -73,42 +79,58 @@ body {
 }
 
 .btn-register {
-	color: var(---black);
+	color: var(---dark-gray);
 	font-weight: 700;
 	text-decoration: none;
 	font-size: 1.6rem;
+	margin-bottom: 0.3rem;
 }
 
 .btn-register:hover {
-	color:var(---white);
+	color:var(---dark-gray);
 	transform: scale(1.04);
 }
 
 .btn-login {
 	text-decoration: none;
+	font-size: 1.6rem;
+	color:var(---white);
+	padding: 1.5rem 2rem;
+	border-radius: 2rem;
+	font-weight: 700;
+	background-color:var(---green);
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.btn-login:hover{
+	background: var(---black);
+	transform: scale(1.04);
 }
 
 .btn-full {
 	font-size: 1.6rem;
-	color:var(---black);
-	padding: 1.5rem 2rem;
+	color:var(---dark-gray);
+	padding: 1.5rem 1.5rem;
 	border-radius: 2rem;
 	font-weight: 700;
 	background-color:var(---white);
 	border: none;
 	outline: none;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 .btn-full:hover {
-	background: var(---green);
+	color: var(---white);
+	background: var(---black);
 	transform: scale(1.04);
 }
 
 /*               SIDEBAR              */
 .navbar {
 	background-color:var(---gray);
-	color:var(---gray);
+	color:var(---black);
 	padding-top: 2.4rem;
 
 	grid-row: 1/3;
@@ -121,11 +143,13 @@ body {
 	position: fixed;
 	width: 30rem;
 	height: calc(100vh - 8rem);
+	box-shadow: 0 0 2rem var(---middle-gray);
 }
-
+.container-logo img{
+	height: 7rem;
+}
 .nav-main {
 	padding: 0 2.4rem;
-
 	display: flex;
 	flex-direction: column;
 	gap: 3rem;
@@ -137,10 +161,8 @@ body {
 
 .nav-main li a {
 	text-decoration: none;
-	font-size: 1.6rem;
-	color: var(---black);
-
-	display: flex;
+	font-size: 1.7rem;
+	color: var(---dark-gray);
 	align-items: center;
 	justify-content: flex-start;
 	gap: 2rem;
@@ -148,13 +170,17 @@ body {
 	text-overflow: ellipsis;
 	transition: all 0.3s ease;
 }
-
-.nav-main li a:hover {
-	color:var(---white);
+.nav-main li i {
+	font-size: 2.5rem;
+	padding-right: 0.4rem;
+	color: var(---dark-gray);
 }
-
 .nav-main li a i {
 	font-size: 2rem;
+	color: var(---dark-gray);
+}
+.nav-main li a:hover {
+	color:var(---black);
 }
 .extra-options {
 	display: inline-flex;
@@ -163,14 +189,14 @@ body {
 
 	padding: 0 2.4rem;
 	margin-top: 1.5rem;
-	flex: 1;
+	flex: 1rem;
 }
 
 .extra-options button {
 	border: none;
 	outline: none;
 	background: transparent;
-	color: var(---gray);
+	color: var(---dark-gray);
 	text-align: left;
 	font-size: 1.6rem;
 	font-weight: 600;
@@ -193,14 +219,13 @@ body {
 	display: flex;
 	flex-direction: column;
 	padding: 0 2.5rem;
-
 	gap: 2rem;
 	margin-bottom: 5rem;
 }
 
 .btn-language {
 	border: 1px solid var(---darkgray);
-	background:var(--aqua);
+	background:var(---white);
 	color: (---white);
 	padding: 1rem;
 	width: 18rem;
@@ -217,7 +242,8 @@ body {
 }
 
 .btn-language:hover {
-	background: var(---white);
+	color: var(---white);
+	background: var(---black);
 	transform: scale(1.05);
 }
 
@@ -235,24 +261,28 @@ body {
 
 .container-links-legal a {
 	text-decoration: none;
-	color:var(---black);
+	color:var(---dark-gray);
 	font-size: 1.2rem;
+}
+
+.container-links-legal a:hover{
+	color: var(---black);
 }
 /*         CONTENIDO PRINCIPAL        */
 
 .main-content {
+	margin-top: 1.5rem;
 	grid-row: 1/3;
 	grid-column: 2/-1;
-
 	background-color:var(---gray);
-	padding: 2.5rem;
-
+	padding: 2.0rem;
 	display: flex;
 	flex-direction: column;
-	gap: 3rem;
+	gap: 2rem;
 }
 
 .title-playlist {
+	margin-top: 1rem;
 	font-size: 2.4rem;
 	color:var(---dark-gray);
 	cursor: pointer;
@@ -267,7 +297,7 @@ body {
 .container-name-spotify-playlists {
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
+	gap: 3rem;
 	margin-bottom: 2rem;
 }
 
@@ -280,18 +310,18 @@ body {
 
 .card-concentracion,
 .card-spotify-playlists {
-	background-color:var(--aqua);
+	background-color:var(---gray);
 	border-radius: 0.5rem;
 	padding: 1.6rem;
-	box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
-	transition: background-color 0.3s ease;
+	box-shadow: 0 0 2rem var(---middle-gray);
+	transition: 0.3s ease;
 	cursor: pointer;
 	position: relative;
 }
 
 .card-concentracion:hover,
 .card-spotify-playlists:hover {
-	background-color: var(---gray);
+	background-image: linear-gradient(90deg,#eae8e8,#219b9e);
 }
 
 .card-img img {
@@ -307,12 +337,12 @@ body {
 	margin-top: 1.5rem;
 	margin-bottom: 1rem;
 	font-size: 1.6rem;
-	color:var(---black);
+	color:var(---dark-gray);
 	font-weight: 600;
 }
 .card p {
 	font-size: 1.3rem;
-	color: var(---dark-gray);
+	color: var(---middle-gray);
 	font-weight: 400;
 	line-height: 1.5;
 	text-overflow: ellipsis;
@@ -321,73 +351,75 @@ body {
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 }
-
 /*               FOOTER               */
-
 .footer {
 	grid-row: 3/4;
 	grid-column: 2/-1;
-	color: var(---white);
-	background-color: var(--aqua);
-	padding: 6rem 4rem;
-
-	display: flex;
-	flex-direction: column;
-	gap: 5rem;
+	background-color: var(---gray);
+	padding: 1rem;
+	display: grid;
+	box-shadow:0 0 1rem var(---middle-gray);
+	align-items: center;
 }
-
-.container-links-footer {
+.footer h3{
+	color: var(---middle-gray);
+	font-size: 1.8rem;
 	display: flex;
-	justify-content: space-between;
-	border-bottom: 1px solid var(---black);
-	padding-bottom: 5rem;
+	flex-direction: column-reverse;
+}
+.social-icons{
+	display:flex;
+	justify-content: right;
+	margin-right: 0;
+}
+.social-icons a {
+	color: var(---green);
+  	text-decoration: none;
+	width: 2rem; 	
+  	height: 2rem;
+  	margin: 1.5rem 1rem;
+  	font-size: 2.7rem;
+  	transition:.3s;
+}
+.social-icons a :hover{
+	color: var(---black);
+}
+.container-links-footer {
+	display: grid;
+	grid-template-columns: auto;
+	columns: 5;
+	padding-bottom: 1rem;
 }
 
 .links-footer {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	gap: 1.5rem;
 	font-size: 1.6rem;
+	margin-left :10rem;
 }
 
 .links-footer a {
 	text-decoration: none;
-	color:var(---black);
+	color:var(---middle-gray);
+	border-right: 0.2rem solid var(---middle-gray);
+	padding-right: 1rem;
 }
 
 .links-footer a:hover {
 	text-decoration: underline;
-	color: var(---white);
-}
-
-.social-icons {
-	display: flex;
-	gap: 2rem;
-}
-
-.container-icon {
 	color: var(---black);
-	background-color:transparent;
-	border-radius: 50%;
-	width: 4.2rem;
-	height: 4.2rem;
+}
 
+.final-footer {
 	display: flex;
 	justify-content: center;
-	align-items: center;
 }
-
-.container-icon:hover {
-	background-color:var(---dark-gray);
-}
-
-.container-icon i {
-	font-size: 1.7rem;
-}
-
-.copyright p {
-	color: var(---dark-gray);
+.final-footer h2{
+	line-height: 2.4rem;
+	gap: 1.5rem;
 	font-size: 1.6rem;
+	color: var(---middle-gray)
 }
 /*            BANNER FINAL            */
 
@@ -397,7 +429,7 @@ body {
 	align-items: center;
 
 	padding: 1rem 2rem;
-	background-image: linear-gradient(90deg,var(---green),var(---dark-gray));
+	background-image:linear-gradient(90deg,#219b9e, rgb(250, 216, 136));
 	color:var(---white);
 
 	position: fixed;
@@ -426,7 +458,6 @@ body {
 .transparent {
 	opacity: 0.9;
 }
-
 .btn-play {
 	width: 5rem;
 	height: 5rem;
@@ -435,7 +466,7 @@ body {
 	justify-content: center;
 	align-items: center;
 
-    background-color: var(---green);
+    background-color:var(---green);
     border: none;
     outline: none;
     border-radius: 50%;
@@ -450,3 +481,4 @@ body {
     font-size: 2.3rem;
     padding-left: .5rem;
 }
+	

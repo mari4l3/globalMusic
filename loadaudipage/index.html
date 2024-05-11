@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Subir audio</h1>
+        <div class="container-left">
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <input type="text" placeholder="Titulo">
+                    </div>
+                    <div class="input-box-descrip">
+                        <input type="text" placeholder="Descripción">
+                    </div>
+                    <div class="input-box">
+                        <select name="" id="" class="option" >
+                            <option value="">Genero</option>
+                            <option value="1">Reggaeton</option>
+                            <option value="2">Electronica</option>
+                            <option value="3">Pop</option>
+                            <option value="4">Bachata</option>
+                            <option value="5">Salsa</option>
+                            <option value="6">Rock</option>
+                            <option value="7">Rap-Freestyle</option>
+                            <option value="8">Clasica</option>
+                        </select>        
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Agrega a una playlist">
+                    </div>
+                </div>
+                <div class="post-format">
+                    <span class="post-title">Formato de publicación</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <input type="radio" name="format" id="dot-1">
+                            <span class="dot one"></span>
+                            <span class="format">Público.</span> 
+                        </label>
+                        <p>Cualquier persona puede escuchar tu audio.</p>
+                        <label for="dot-2">
+                            <input type="radio" name="format" id="dot-2">
+                            <span class="dot two"></span>
+                            <span class="format">Privado. </span> 
+                        </label>
+                        <p>Solo tu puedes escuchar tu audio.</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="container-right">
+            <div class="container-image">
+                <div class="image">
+                    <i class='bx bx-camera'></i>
+                </div>
+                <div class="advert">
+                    <label for="file">Subir una imagen</label>
+                    <input type="file" id="file" name="file"/>
+                </div>
+            </div>
+            <div class="btn-load">
+                <button type="submit" class="btn-full"> <a href=""><i class='bx bx-upload'></i>Subir</a></button>
+            </div>
+        </div>     
+    </div>
+</body>
+</html>

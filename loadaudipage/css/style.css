@@ -18,7 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background:url(/images/background.png);
+    background:var(---gray);
     background-size: cover;
     background-position: center;
 }

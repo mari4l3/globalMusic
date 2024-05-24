@@ -1,0 +1,199 @@
+/*
+1.Posicionamiento
+2.modelo caja(box model) 
+3.Tipografia
+4.Visuales
+5.Miscelanios (otros)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to top right, #219b9e, rgb(250, 216, 136));
+    padding: 50px 25px;
+    
+}
+.derecha ul {
+    list-style: none;
+}
+header img
+{
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.header--title-container{
+    display: flex;
+    justify-content: center;
+}
+
+.header--title-container h1 {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 32px;
+        color: white;
+        text-align: center;
+ }
+
+main {
+    width: 100%;
+    height: auto;
+    color: #adadad;
+
+}
+
+.main-exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: left;
+}
+section.pantalla-dividida {
+    padding: 50px 25px;
+}
+.izquierda {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.izquierda h2 {
+    font-size: 45px;
+}
+
+.head4, .head5, .head6 
+{
+    font-weight: 700;
+    color: #219b9e;
+    text-align: center;
+}
+p.head4 {
+    font-size: 42px;
+}
+.head5 {
+    font-size: 65px;
+    line-height: 34px;
+}
+
+.head6 {
+    font-size: 30px;
+    margin-top: 8px;
+}
+
+.derecha {
+    font-size: 20px;
+    color: #5e5e5e;
+    margin-top: 25px;
+} 
+
+.derecha img {
+    width: 15px;
+    height: 15px;
+}
+
+.pantalla-dividida3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0px;
+}
+strong {
+    display: block;
+}
+
+.container {
+    text-align: center;
+    font-size: 30px;
+    color: #5e5e5e;
+}
+
+.container1 {
+
+    font-size: 35px;
+    color: #5e5e5e;
+}
+
+.container2 {
+
+    font-size: 25px;
+    color: #5e5e5e;
+}
+.wide-table 
+{
+    border-collapse: collapse;
+    width:400px;
+}
+
+
+
+.wide-table td 
+{
+    border: 1px solid #5e5e5e;
+    padding: 8px;
+    text-align: center;
+    color: #5e5e5e;
+}
+h1.centered-text {
+    font-size: 42px;
+}
+h1.centered-text1 {
+    font-size: 20px;
+}
+p.centered-text {
+    font-size: 22px;
+}
+
+@media (min-width: 1024px) {
+    .head4, .head5, .head6 {
+    font-size: 140px;
+   }
+   .pantalla-dividida {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+header img
+{
+    width: 20%;
+}
+header {
+    align-items:flex-start;
+}
+
+.header--title-container h1 {
+    font-size: 39px;
+    line-height: 51px;
+    max-width: 916px;
+    margin: 25px 160px;
+}
+.header--title-container h1 span {
+    display: block;
+}
+
+p.head4 {
+    font-size: 59px;
+}
+.head5 {
+    font-size: 90px;
+}
+
+.head6 {
+    font-size: 41px;
+}
+
+.derecha {
+    font-size: 23px;
+}
+
+}

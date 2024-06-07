@@ -492,36 +492,480 @@ h2{
     padding-left: .5rem;
 }
 	
-@media(max-width:768px){
-    
-    .main-content{
-        grid-template-columns: 1fr;
-    }
-    .content{
-       
+@media  (min-width: 1200px) and (max-width: 2400px) {
+	.container {
+	  grid-template-columns: 30rem 1fr;
+	  grid-template-rows: min-content 1fr min-content;
+	  margin-bottom: 1rem;
+	}
+	#check{
+		opacity: 0;
+	}
+	.checkbtn i{
+		opacity: 0;
+	}
+	.banner-bottom {
+		padding: 1rem 2rem;
+  }
+}
+@media (min-width: 1093px) and (max-width: 1199px) {
+	.container {
+	  grid-template-columns: 30rem 1fr;
+	}
+	.checkbtn{
+		opacity: 0;
+	}
+  }
+  @media (min-width: 992px) and (max-width: 1092px) {
+	.container {
+	  grid-template-columns: 24rem 1fr;
+	}
+	.topbar {
+		width: 76%;
+	}
+	h2 {
+	  font-size: 1.8rem;
+	}
+  
+	.btn-register,
+	.btn-login,
+	.btn-full {
+	  font-size: 1.2rem;
+	  padding: 0.75rem 1.5rem;
+	}
+	.navbar{
+		width: 24rem;
+	}
+	.container-logo img {
+		height: 6rem;
+	}
+	#check{
+		opacity: 0;
+	}
+	.checkbtn i{
+		opacity: 0;
+	}
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+	.container {
 		grid-template-columns: 1fr;
-    }
-    .sidebar
-    { 
-        flex-direction: column;
-    }
-	.topbar2{
-		flex-direction: column;
-		}
-
-	.topbar{
-			flex-direction: column;
-		}
-
+		grid-template-rows: auto 1fr auto;
+	}	
+	.topbar {
+		width: 100%;
+	}	
+	h2 {
+		font-size: 1.6rem;
+	}
+	.btn-register,
+	.btn-login,
+	.btn-full {
+		font-size: 1.2rem;
+		padding: 1rem 1.2rem;
+	}	
+	.container-logo{
+		margin-top: 6.5rem;
+	}
+	.container-logo img {
+		height: 7rem;
+	}
+	.navbar {
+		width: 30%;
+	}
+	.navbar li {
+		margin-bottom: 1.4rem;
+		margin-left: 0.7rem;
+	} 
+	.nav-main li a {
+		font-size: 1.2rem;
+	}
+	.extra-options button {
+		font-size: 1.2rem;
+	}
+	.container-links{
+		bottom: 30%;
+	}
+	#check{
+		opacity: 0;
+	}
+	.checkbtn i{
+		top:1%;
+		opacity: 0;
+	}
+	.main-content {
+		width: 70%;
+		margin-left: 30%;
+	}
+	.container-card-concentracion,
+	.container-card-spotify-playlists {
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	gap: 2rem;
+	}
+	.title-playlist {
+		font-size: 1.6rem;
+	}
 	
+	.card-concentracion h2,
+	.card-spotify-playlists h2 {
+		font-size: 1.2rem;
+	}
+	
+	.card-concentracion p,
+	.card-spotify-playlists p {
+		font-size: 1.1rem;
+	}
+	.footer{
+		width: 70%;
+		margin-left: 30%;
+	}
+	.footer h3 {
+		font-size: 1.2rem;
+	}
+	
+	.links-footer a {
+		font-size: 1.2rem;
+		margin-left: 0.1rem;
+	}
+  }
+  @media  (min-width: 576px) and (max-width: 767px) {
+	.container {
+	  grid-template-columns: 1fr;
+	  grid-template-rows: auto 1fr auto;
+	} 
+	.topbar {
+	  width: 100%;
+	  z-index: 1;
+	} 
+	h2 {
+	  font-size: 1.6rem;
+	} 
+	.btn-register,
+	.btn-login,
+	.btn-full {
+	  font-size: 1.2rem;
+	  padding: 1rem 1.2rem;
+	}
+	.container-logo{
+		width: 26rem;
+	}
+	.container-logo img {
+	  height: 3.7rem;
+	}
+	.navbar{
+		display: none;
+		z-index: 1;
+	}
+	.nav-main li a {
+	  font-size: 1.2rem;
+	}  
+	.extra-options button {
+	  font-size: 1.2rem;
+	}
+	.container-links-legal {
+		margin-top: 3.5rem;
+	}
+	.btn-language i{
+	  width: 2.5rem;
+	  margin-left: 0.1re;
+	}
+	.main-content {
+		width: 100%;
+		z-index: auto;
+	}
+	#check{
+	  opacity: 0;
+	}
+	.checkbtn{
+        color:var(---green);
+    }
+	.checkbtn i:hover{
+		color: var(---black);
+	}
+	.checkbtn i{
+	   top:5%;
+	   opacity: 1;
+	   font-size: 4rem;
+	}
+	.navbar.active {
+		display: block;
+	}
+	.container-card-concentracion,
+	.container-card-spotify-playlists {
+	grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+	gap: 2rem;
+	}
+	.title-playlist {
+	  font-size: 1.6rem;
+	} 
+	.card-concentracion h2,
+	.card-spotify-playlists h2 {
+	  font-size: 1rem;
+	  left: 0;
+	} 
+	.card-concentracion p,
+	.card-spotify-playlists p {
+	  font-size: 1.1rem;
+	}
+	.footer{
+		width: 100%;
+	}
+	.footer h3 {
+	  font-size: 2.5rem;
+	} 
+	.links-footer{
+		left: 0;
+		gap: 1.3rem;
+	}
+	.links-footer a {
+	  font-size: 1.5rem;
+	  position: center;
+	}
+	.final-footer h2{
+		line-height: 3rem;
+		margin-bottom: 0.7rem;
+	}
+	.banner-bottom{
+		padding: 1rem 1.5rem;
+	}
+  }
+  @media(min-width: 374px) and (max-width: 575px) {
+	.container {
+	  grid-template-columns: 1fr;
+	  grid-template-rows: auto 1fr auto;
+	}
+	.topbar {
+	  width: 100%;
+	  padding: 1rem 0.5rem;
+	  z-index: 1;
+	}
+	.container-arrow-left,
+	.container-arrow-right {
+	  width: 1.7rem;
+	  height: 1.7rem;
+	  left: 0;
+	}
+	.container-arrow-left i,
+	.container-arrow-right i{
+		font-size: 1.3rem;
+	} 
+	h2 {
+	  margin-right: 0.7rem;
+	  margin-left: 0.5rem;
+	  font-size: 1.2rem;
+	}
+	.btn-register,
+	.btn-login,
+	.btn-full {
+	  left: 0;
+	  font-size: 1rem;
+	  padding: 0.5rem 1rem;
+	  gap: 0.5rem;
+	}
+	.container-logo{
+	  width: 23rem;
+	}
+	.container-logo img {
+	  height: 3.4rem;
+	}
+	.navbar{
+	  display: none;
+	  z-index: 1;
+	}
+	.nav-main li a {
+	  font-size: 1.2rem;
+	}
+	.extra-options button {
+	  font-size: 1.2rem;
+	}
+	.container-links-legal {
+		margin-top: 3.5rem;
+	}
+	.btn-language{
+		width: 13rem;
+	}
+	.btn-language i{
+	  width: 2rem;
+	  margin-left: 0.1rem;
+	}
+	.main-content{
+	   width: 100%;
+	   z-index: auto;
+	}
+	#check{
+	  opacity: 0;
+	}
+	.checkbtn i{
+	  color:var(---green);
+	}
+	.checkbtn i:hover{
+	  color: var(---black);
+	}
+	.checkbtn i{
+	  top:5%;
+	  opacity: 1;
+	  font-size: 4rem;
+	}
+	.navbar.active {
+	  width: 43%;
+	  height: 70rem;
+	  display: block;
+	}
+	.title-playlist {
+	  margin-top: 0.1rem;
+	  font-size: 1.6rem;
+	}
+	.container-card-concentracion,
+	.container-card-spotify-playlists {
+	  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+	  gap: 2rem;
+	}
+	.card-concentracion h2,
+	.card-spotify-playlists h2 {
+	  font-size: 1.2rem;
+	}
+	.card-concentracion p,
+	.card-spotify-playlists p {
+	  font-size: 1.1rem;
+	}
+	.footer{
+	  width: 100%;
+	}
+	.links-footer  {
+	  font-size: 1.7rem;
+	  position: center;
+	  margin-left: 2rem;
+	}
+	.links-footer a {
+	  font-size: 1.5rem;
+	  position: center;
+	}
+	.footer h3{
+	  right: 2rem;
+	}
+	.banner-bottom{
+	   padding: 1rem 1rem;
+		height: 10rem;
+	}
+  }
+  @media(min-width: 360px) and (max-width:373px) {
+	body{
+		height: auto;
+	}
+	.container {
+	  grid-template-columns: 1fr;
+	  grid-template-rows: auto 1fr auto;
+	}
+	.topbar {
+	  width: 100%;
+	  padding: 1rem 0.5rem;
+	  z-index: 1;
+	}	
+	.container-arrow-left,
+	.container-arrow-right {
+	  width: 1.5rem;
+	  height: 1.5rem;
+	  left: 0;
+	}
+	.container-arrow-left i,
+	.container-arrow-right i{
+		font-size: 1rem;
+	} 
+	h2 {
+		margin-right: 0.5rem;
+		margin-left: 0.5rem;
+	    font-size: 1.2rem;
+	}  
+	.btn-register,
+	.btn-login,
+	.btn-full {
+	  left: 0;
+	  font-size: 1rem;
+	  padding: 0.5rem 1rem;
+	  gap: 0.5rem;
+	}
+	.container-logo{
+	  width: 22rem;
+	}
+	.container-logo img {
+	  height: 3.4rem;
+	}
+	.navbar{
+	  display: none;
+	  z-index: 1;
+	}
+	.nav-main li a {
+	  font-size: 1.2rem;
+	}
+	.extra-options button {
+	  font-size: 1.2rem;
+	}
+	.container-links-legal {
+	  margin-top: 3.5rem;
+	}
+	.btn-language{
+		width: 13rem;
+	}
+	.btn-language i{
+	  width: 2rem;
+	  margin-left: 0.1rem;
+	}
+	.main-content{
+	  width: 100%;
+	  z-index: auto;
+	}
+	#check{
+	  opacity: 0;
+	}
+	.checkbtn{
+	  color:var(---green);
+	}
+	.checkbtn i:hover{
+	  color: var(---black);
+	}
+	.checkbtn i{
+	  top:5%;
+	  opacity: 1;
+	  font-size: 4rem;
+	}
+	.navbar.active {
+	  width: 43%;
+	  display: block;
+	  height: 115rem;
+	}
+	.title-playlist {
+	  margin-top: 0.1rem;
+	  font-size: 1.6rem;
+	}
+	.container-card-concentracion,
+	.container-card-spotify-playlists {
+	  display: grid;
+	  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+	  gap: 2rem;
+	}
+	.card-concentracion h2,
+	.card-spotify-playlists h2 {
+	  font-size: 1.2rem;
+	}
+	.card-concentracion p,
+	.card-spotify-playlists p {
+	  font-size: 1.1rem;
+	}
+	.footer{
+	  width: 100%;
+	}
+	.links-footer  {
+	  font-size: 1.5rem;
+	  position: center;
+	  margin-left: 1rem;
+	}
+	.links-footer a {
+	  font-size: 1.2rem;
+	  margin-left: 0;
+	}
+	.footer h3{
+	  right: 2rem;
+	}
+	.banner-bottom{
+	  padding: 0.9rem 0.9rem;
+	}
 }
-
-@media(max-width:480px)
-{
-
-.topbar2{
-	flex-direction: column;
-
-}
-}
-

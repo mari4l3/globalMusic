@@ -92,6 +92,7 @@ font-size: 8px;
 margin-top: -10x;
 cursor: pointer;
 }
+
 .text-perfil:hover {
 color:#219b9e;
 }
@@ -233,7 +234,8 @@ color: #219b9e;
 grid-area: cuerpo;
 background-color:#eae8e8;
 margin: 0;
-padding: 0;   
+padding: 0;
+margin-top: -81px;
 }
 /** --------BANNER FEID------**/
 .text-nombre-feid {

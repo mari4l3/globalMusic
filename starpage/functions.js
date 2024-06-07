@@ -3,9 +3,9 @@ const topBar = document.querySelector('.topbar');
 // Cambiar opacidad con Scroll
 window.addEventListener('scroll', () => {
 	if (window.scrollY > 0) {
-		topBar.classList.add('transparent');
+		topBar.classList.add('transparent'); // mas opcacidad 
 	} else {
-		topBar.classList.remove('transparent');
+		topBar.classList.remove('transparent'); // menos opacidad 
 	}
 });
 
@@ -57,3 +57,13 @@ containerConcentracion.forEach(card => {
 containerSpotifyPlaylists.forEach(card => {
 	createButton(card);
 });
+
+
+// JavaScript
+if(window.innerWidth >= 676){
+const navbarcheck = document.getElementById('check');
+const navbar = document.getElementById('navbar');
+	navbarcheck.addEventListener('click', () => {
+	navbar.classList.toggle('active');
+	});
+}
